@@ -1,0 +1,70 @@
+.promotions {
+  width: 100%;
+  margin-bottom: 150px;
+  &__header {
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    h1 {
+      font-family: SegoeUI;
+      font-size: 45px;
+    }
+    p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 35px;
+    }
+  }
+  &__subbanner {
+    display: flex;
+    // background-color: blue;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px 50px;
+    padding-bottom: 150px;
+
+    div {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      h1 {
+        display: flex;
+        font-size: 30px;
+        right: 0px;
+        bottom: 0px;
+        text-transform: uppercase;
+      }
+    }
+    .image1 {
+      background-image: url("../images/coach1.jpg");
+      height: 300px;
+      width: 250px;
+    }
+    .image2 {
+      background-image: url("../images/coach2.jpg");
+      height: 300px;
+      width: 250px;
+    }
+    .image3 {
+      background-image: url("../images/coach3.jpg");
+      height: 300px;
+      width: 250px;
+    }
+    .image4 {
+      background-image: url("../images/coach4.jpg");
+      height: 300px;
+      width: 250px;
+    }
+    :hover {
+      transform: scale(1.2);
+
+      .paragraph {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 300px auto;
+        width: 250px;
+        font-size: 20px;
+      }
+    }
+  }
+}

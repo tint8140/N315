@@ -1,0 +1,25 @@
+.mission {
+  //   width: 100%;
+  background-color: aquamarine;
+
+  &__statement {
+    display: flex;
+    font-family: SegoeUI;
+    color: white;
+    // margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+@media (max-width: 800px) {
+  .mission {
+    &__statement {
+      height: 30%;
+      font-size: 30px;
+      bottom: 0;
+      padding-bottom: 20px;
+    }
+  }
+}

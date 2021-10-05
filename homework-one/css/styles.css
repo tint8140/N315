@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+section {
+  padding: 100px 20px 20px 30px;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background-color: pink;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: white;
+}
+
+.home {
+  background-color: pink;
+  height: 100%;
+  padding: 100px 20px 20px 20px;
+  background-image: linear-gradient(to right, rgba(25, 25, 100, 0.6), rgba(25, 25, 100, 0.6)), url(../images/background.jpg);
+  background-image: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #e9df51;
+}
+.home__header {
+  text-align: center;
+}
+.home__page {
+  padding-left: 100px;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+.about {
+  height: 40%;
+  padding: 20px 40px 20px 60px;
+  background-color: aquamarine;
+}
+.about__header {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+.about__top {
+  height: 100px;
+  display: flex;
+}
+.about__para1 {
+  height: 100%;
+  width: 50%;
+}
+.about__para2 {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .about {
+    height: 50%;
+  }
+  .about__para1 {
+    padding-right: 30px;
+  }
+}
+.program {
+  background-color: beige;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 40px 20px 50px 100px;
+}
+.program h1 {
+  text-align: center;
+}
+.program__holder {
+  height: 100%;
+  display: flex;
+}
+.program__holder__image {
+  align-items: right;
+  width: 400px;
+}
+.program__infos {
+  padding-left: 30px;
+  font-size: 15px;
+  width: 70%;
+}
+
+.signup {
+  width: 100%;
+  background-color: #f6d2d2;
+  height: 50%;
+  display: flex;
+}
+.signup__part {
+  margin: 10px 20px;
+  padding-left: 30px;
+  font-family: SegoeBold;
+  font-size: 20px;
+}
+.signup__part div {
+  display: flex;
+}
+.signup__part div input {
+  margin-right: 20px;
+  width: 500px;
+  height: 70px;
+  font-size: 60px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+.signup__part div button {
+  background-color: #000000;
+  width: 130px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.signup__part div button p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .program {
+    height: 100%;
+  }
+  .program__holder {
+    width: 100%;
+    display: flex;
+  }
+  .program__holder__image {
+    width: 200px;
+  }
+  .program__infos {
+    height: 100%;
+    width: 80%;
+    font-size: small;
+  }
+
+  .signup__part {
+    height: 20%;
+    width: 80%;
+  }
+}
+.promotions {
+  width: 100%;
+  margin-bottom: 150px;
+}
+.promotions__header {
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+}
+.promotions__header h1 {
+  font-family: SegoeUI;
+  font-size: 45px;
+}
+.promotions__header p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+}
+.promotions__subbanner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px 50px;
+  padding-bottom: 150px;
+}
+.promotions__subbanner div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promotions__subbanner div h1 {
+  display: flex;
+  font-size: 30px;
+  right: 0px;
+  bottom: 0px;
+  text-transform: uppercase;
+}
+.promotions__subbanner .image1 {
+  background-image: url("../images/coach1.jpg");
+  height: 300px;
+  width: 250px;
+}
+.promotions__subbanner .image2 {
+  background-image: url("../images/coach2.jpg");
+  height: 300px;
+  width: 250px;
+}
+.promotions__subbanner .image3 {
+  background-image: url("../images/coach3.jpg");
+  height: 300px;
+  width: 250px;
+}
+.promotions__subbanner .image4 {
+  background-image: url("../images/coach4.jpg");
+  height: 300px;
+  width: 250px;
+}
+.promotions__subbanner :hover {
+  transform: scale(1.2);
+}
+.promotions__subbanner :hover .paragraph {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 300px auto;
+  width: 250px;
+  font-size: 20px;
+}
+
+.contact {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact__form {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+}
+.contact__form .input {
+  outline: none;
+  width: 400px;
+  background-color: white;
+  color: #fff;
+  border: 2px solid black;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 5px;
+  margin: 25px;
+}
+.contact__form .button {
+  background-color: purple;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  transition: 1s;
+}
+
+.information {
+  width: 100%;
+  padding: 10px 40px 20px 100px;
+  background-color: aquamarine;
+}
+.information__holder {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.information__holder__address {
+  width: 50%;
+  font-size: 20px;
+}
+.information__holder .trainer {
+  width: 50%;
+}
+.information__holder .trainer img {
+  width: 200px;
+}
+
+.mission {
+  background-color: aquamarine;
+}
+.mission__statement {
+  display: flex;
+  font-family: SegoeUI;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  .mission__statement {
+    height: 30%;
+    font-size: 30px;
+    bottom: 0;
+    padding-bottom: 20px;
+  }
+}
+footer {
+  width: 100%;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
