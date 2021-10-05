@@ -1,0 +1,63 @@
+.contact {
+  height: 100%; // padding: 50px 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__form {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 40px;
+
+    .input {
+      outline: none;
+      width: 400px;
+      background-color: white;
+      color: #fff;
+      border: 2px solid black;
+      font-weight: 300;
+      font-size: 16px;
+      padding: 5px;
+      margin: 25px;
+    }
+    .button {
+      background-color: purple;
+      color: white;
+      border-radius: 15px;
+      border: none;
+      padding: 10px;
+      transition: 1s;
+    }
+  }
+}
+
+.information {
+  margin-top: 40px;
+  width: 100%;
+  padding: 10px 40px 20px 100px;
+  background-color: aquamarine;
+
+  &__holder {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__address {
+      width: 50%;
+      font-size: 20px;
+    }
+
+    .happy {
+      width: 50%;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .contact {
+  }
+}
