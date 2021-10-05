@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-self: right;
+  font-size: 25px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media only all and (max-width: 1020px) {
+  nav {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.home {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.home__content {
+  font-size: 20px;
+  color: white;
+  font-family: GillSans;
+  height: 500px;
+  background-image: url(../images/dog.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__paragraph {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-top: 36px;
+  margin-bottom: 95px;
+  color: black;
+}
+
+.about {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.about__content {
+  height: 500px;
+  background-image: url(../images/woman.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__header {
+  width: 980px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.about__paragraph {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-top: 36px;
+  margin-bottom: 95px;
+  color: black;
+  padding: 20 30px;
+}
+
+@media only all and (max-width: 1020px) {
+  .about-content {
+    margin-left: 20px;
+  }
+}
+.gallery {
+  width: 980px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.gallery__images {
+  padding-top: 30px;
+}
+.gallery__partOne {
+  display: flex;
+  justify-content: space-between;
+  min-height: 187px;
+  max-width: 980px;
+}
+.gallery__partOne .sunset {
+  height: 287px;
+  width: 489px;
+  background-image: url(../images/sunset.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery__partOne .flowers {
+  height: 287px;
+  width: 487px;
+  background-image: url(../images/flowers.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__partTwo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.gallery__partTwo .chipmunk {
+  height: 300px;
+  width: 600px;
+  background-image: url(../images/chipmunk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery__partTwo .butterfly {
+  height: 300px;
+  width: 355px;
+  background-image: url(../images/butterfly.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.gallery__header {
+  width: 980px;
+  margin: 0 auto;
+  font-size: 40px;
+}
+.gallery__paragraph {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: 25px;
+  margin-top: 36px;
+  margin-bottom: 95px;
+  color: black;
+}
+
+@media only all and (max-width: 1020px) {
+  .gallery {
+    margin-left: 20px;
+  }
+}
+
+.contact {
+  width: 980px;
+  margin: 0 auto;
+  font-family: GillSans;
+}
+
+.contact__content {
+  font-size: 25px;
+  font-weight: normal;
+  padding-right: 30px;
+  padding-top: 40px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.contact__content form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 500px;
+}
+.contact__content form div .input {
+  height: 60px;
+  padding-left: 15px;
+  background-color: #f5f5f5;
+  border: none;
+}
+.contact__content form div .contact-input {
+  height: 100px;
+  padding-left: 15px;
+  background-color: #f5f5f5;
+  border: none;
+}
+
+.contact__content form .submit {
+  width: 140px;
+  height: 50px;
+  margin-top: 40px;
+  font-size: 20px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  align-items: enter;
+}
+
+@media only all and (max-width: 1020px) {
+  .contact-content {
+    width: 80%;
+  }
+}
+
+footer {
+  height: 15%;
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 20px;
+  font-family: GillSans;
+  color: white;
+  padding: 30px;
+}
+
+@media only all and (max-width: 740px) {
+  footer form {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 45px;
+  }
+}
