@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+  /* padding-left: 50px 100px 30px 20px; */
+  align-items: center;
+  /* justify-content: right; */
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.homePage {
+  padding: 30px;
+}
+h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.image {
+  background-image: url("../images/image.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.paragraph {
+  width: 90%;
+  padding-left: 200px;
+}
+
+footer {
+  margin: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  background-color: #ccc;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bg-click {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.callout {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: lightcyan;
+}
+h1 {
+  padding-top: 50px;
+  /* align-items: center;
+  text-align: center; */
+  left: 220px;
+  font-size: 40px;
+  color: black;
+}
+.paragraphs {
+  padding-top: 20px;
+  position: relative;
+  left: 200px;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+input {
+  position: relative;
+  left: 200px;
+  width: 200px;
+  padding: 12px 20px;
+}
+
+#submit {
+  display: flex;
+  margin: 20px 40px;
+  background-color: black;
+  border: none;
+  color: white;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#submit:hover {
+  /* width: max-content; */
+  background: blueviolet;
+}
