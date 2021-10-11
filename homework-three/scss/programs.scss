@@ -1,0 +1,39 @@
+.program {
+  background-color: beige;
+  height: 100%;
+  padding: 40px 20px 50px 100px;
+  h1 {
+    text-align: center;
+  }
+
+  &__image {
+    align-items: right;
+    width: 100%;
+    background-image: url("../images/school.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 50px;
+  }
+
+  &__infos {
+    padding-left: 30px;
+    font-size: 15px;
+    width: 70%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .program {
+    height: 100%;
+    &__image {
+      width: 90%;
+    }
+    &__infos {
+      height: 100%;
+      width: 80%;
+      font-size: small;
+    }
+  }
+}

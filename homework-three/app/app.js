@@ -11,7 +11,7 @@ function route() {
   }
 }
 function navToPage(pageName) {
-  $.get(`pages/${pageName}/${pageName}.html`, function (data) {
+  $.get(`pages/${pageName}.html`, function (data) {
     console.log(data);
     $("#app").html(data);
   });

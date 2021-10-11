@@ -1,0 +1,50 @@
+nav {
+  // height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  // padding: 50px 50px;
+  display: flex;
+  font-family: Caveat;
+  font-size: 25px;
+  .logo {
+    background: url(../images/logo.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 217px;
+    height: 55px;
+  }
+  .nav-links {
+    width: 30%;
+    height: 52px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .login {
+    width: 158px;
+    height: 52px;
+    border-radius: 80px;
+    background-color: #ffd972;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  i {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  nav {
+    .nav-links {
+      display: none;
+    }
+    i {
+      display: block;
+    }
+  }
+}
